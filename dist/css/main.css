@@ -1,3 +1,25 @@
+.menu-btn {
+  position: absolute;
+  z-index: 3;
+  right: 35px;
+  top: 35px;
+  cursor: pointer;
+  transition: all 0.5s ease-out; }
+  .menu-btn .btn-line {
+    width: 27px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: #ffffff;
+    transition: all 0.5s ease-out; }
+  .menu-btn.close {
+    transform: rotate(180deg); }
+    .menu-btn.close .btn-line:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px); }
+    .menu-btn.close .btn-line:nth-child(2) {
+      opacity: 0; }
+    .menu-btn.close .btn-line:nth-child(3) {
+      transform: rotate(-45deg) translate(6px, -6px); }
+
 * {
   box-sizing: border-box; }
 
@@ -12,15 +34,20 @@ body {
     background: url(/dist/img/background.jpg);
     background-attachment: fixed;
     background-size: cover; }
-    body#bg-img::after {
+    body#bg-img:after {
       content: "";
       position: absolute;
       height: 100%;
       width: 100%;
       top: 0;
       right: 0;
+      background: rgba(68, 68, 68, 0.9);
+      /*without rgba, background color will be same as primary color
+        using rgba , we simply add background opacity which helps to make color ligher*/
       z-index: -1;
-      background: rgba(68, 68, 68, 0.9); }
+      /*now after the background color lighter we see another problem i.e background image lie over the main text.
+        now to overcome this we used z-index i.e which helps to push forward the things but here we need to push back not forward so we siply
+        do this by making z-index negative*/ }
 
 h1,
 h2,

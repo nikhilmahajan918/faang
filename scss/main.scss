@@ -1,4 +1,5 @@
 @import "config";
+@import "menu";
 
 * {
   box-sizing: border-box;
@@ -21,7 +22,7 @@ h3 {
   margin: 0;
   font-weight: 400;
   &.lg-heading {
-    //here only .lg-heading we not used as lg-heading is itself a class of h1. if it is nested class then we use .lg-heading
+    //here only .lg-heading we not used as lg-heading as it is itself a class of h1. if it is nested class then we use .lg-heading
     font-size: 5rem; // here, rem is default font weight of html i.e 16px. so 5*16 i.e 5rem = 80px. refer to chrome tools for more
   }
 
@@ -40,7 +41,7 @@ a {
 
 // header
 header {
-  position: fixed;
+  position: fixed; //header i.e menu button area we need to fixed so after scrolling , menu button position dont change.
   z-index: 2;
   width: 100%;
 }

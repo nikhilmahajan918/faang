@@ -10,20 +10,29 @@ $background-opacity: 0.9;
 
 @mixin background {
   @if $show-home-image {
+    //if show-home-image is true
     &#bg-img {
       background: $home-image;
       background-attachment: fixed;
       background-size: cover;
 
-      &::after {
+      &:after {
+        //here,after is refer to extra element after bg-img. we also use class here like overflow which we used previous.
         content: "";
         position: absolute;
         height: 100%;
         width: 100%;
         top: 0;
         right: 0;
+        background: rgba(
+          $primary-color,
+          $background-opacity
+        ); /*without rgba, background color will be same as primary color
+        using rgba , we simply add background opacity which helps to make color ligher*/
         z-index: -1;
-        background: rgba($primary-color, $background-opacity);
+        /*now after the background color lighter we see another problem i.e background image lie over the main text.
+        now to overcome this we used z-index i.e which helps to push forward the things but here we need to push back not forward so we siply
+        do this by making z-index negative*/
       }
     }
   }
