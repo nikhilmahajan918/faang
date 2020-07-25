@@ -55,7 +55,7 @@ header {
 }
 
 main {
-  padding: 2.7rem;
+  padding: 3rem;
   //height: 100%;  //comment out so to make about.html main-footer sticky
   min-height: calc(
     100vh - 60px
@@ -83,7 +83,8 @@ main {
 
   &#about {
     overflow: hidden;
-    margin-top: 1px; //vh=viewpointheight
+    margin-top: 0; //vh=
+    padding: 0.55rem 2.8rem;
   }
 }
 
@@ -126,6 +127,49 @@ main {
   }
 }
 
+// work projects
+.projects {
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(3, 1fr);
+
+  img {
+    width: 100%;
+    border: 3px #fff solid;
+
+    &:hover {
+      opacity: 0.9;
+      border-color: $secondary-color;
+      @include easeOut;
+    }
+  }
+}
+
+//button styles
+.btn {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+
+  &:hover {
+    background: $secondary-color;
+    color: set-text-color($secondary-color);
+  }
+}
+.btn-dark {
+  @extend .btn;
+  background: darken($color: $primary-color, $amount: 50);
+  color: #fff;
+}
+
+.btn-light {
+  @extend .btn;
+  background: lighten($color: $primary-color, $amount: 50);
+  color: #333;
+}
+
+// footer area
 #main-footer {
   text-align: center;
   padding: 1rem;
