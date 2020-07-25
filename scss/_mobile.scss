@@ -9,8 +9,8 @@
 // Tablets & Small laptops
 @include mediaMd {
   main {
-    text-align: center;
     align-items: center;
+    text-align: center;
 
     .lg-heading {
       line-height: 1;
@@ -44,6 +44,17 @@
       width: 150px;
       height: 150px;
     }
+  }
+
+  .about-info {
+    grid-template-areas:
+      "bioimage"
+      "bio"
+      "job1"
+      "job2"
+      "job3";
+
+    grid-template-columns: 1fr;
   }
 }
 

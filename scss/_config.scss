@@ -37,6 +37,17 @@ $background-opacity: 0.9;
     }
   }
 }
+
+// Set text color automatic based on background.
+//eg if we change primary color i.e background color to some light color let say white then whole text will be change to some black and vice-versa.
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return #000000;
+  } @else {
+    @return #fff;
+  }
+}
+
 //Media Query Mixins
 @mixin mediaSm {
   @media screen and (max-width: 500px) {
