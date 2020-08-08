@@ -24,7 +24,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
+  opacity: 0.975;
   visibility: hidden; }
   .menu.show {
     visibility: visible; }
@@ -53,11 +53,11 @@
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
     .menu-branding .portrait {
-      width: 250px;
-      height: 250px;
-      background: url("/dist/img/portrait.jpg");
+      width: 230px;
+      height: 242px;
+      background: url("/dist/img/Portraitkaint.jpg");
       border-radius: 50%;
-      border: solid 3px #eece1a; }
+      border: solid 2px #eece1a; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
@@ -163,19 +163,35 @@ main {
       margin-top: 20vh; }
   main#about {
     overflow: hidden;
+    margin-top: 3.2vh;
+    padding: 0 4rem;
+    margin: 0 0.1rem 0 0.1rem; }
+  main#work {
+    overflow: hidden;
     margin-top: 0;
-    padding: 0.55rem 2.8rem; }
+    padding: 0.33rem 2.8rem; }
 
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
-  grid-template-columns: repeat(3, 1fr); }
+  grid-template-areas: "bioimage bio bio" "job3 job3 hackerrank";
+  grid-template-columns: repeat(1, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
-    border: #eece1a 3px solid; }
+    border: #eece1a 2px solid;
+    width: 227px;
+    height: 240px; }
+  .about-info .hackerrank-image {
+    grid-area: hackerrank;
+    width: 50%;
+    height: 90px;
+    margin-left: 0;
+    margin-right: 30px;
+    margin-top: 20px;
+    float: left;
+    border-radius: 20%; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
@@ -186,9 +202,11 @@ main {
   .about-info .job-3 {
     grid-area: job3; }
   .about-info .job {
-    background: #515151;
-    padding: 0.5rem;
-    border-bottom: #eece1a 5px solid; }
+    background: #484848;
+    padding: 0.56rem 0 0 0.6rem;
+    margin: 0 0 0 0.8rem;
+    border-bottom: #eece1a 5px solid;
+    height: 91%; }
 
 .projects {
   display: grid;
@@ -196,11 +214,38 @@ main {
   grid-template-columns: repeat(3, 1fr); }
   .projects img {
     width: 100%;
-    border: 3px #fff solid; }
+    border: #fff solid;
+    margin-top: 2%; }
     .projects img:hover {
       opacity: 0.9;
       border-color: #eece1a;
       transition: all 0.5s ease-out; }
+  .projects .item {
+    background: #515151;
+    padding: 0.2rem; }
+    .projects .item h3 {
+      text-align: center; }
+    .projects .item p {
+      margin: 6px 0; }
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem; }
+  .boxes div {
+    font-size: 1.6rem;
+    border: 1.5px #fff solid;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    transition: all 0.5s ease-out; }
+    .boxes div:hover {
+      padding: 0.5rem 1.5rem;
+      background: #eece1a;
+      color: #000000; }
+      .boxes div:hover span {
+        color: #000000; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
@@ -219,6 +264,20 @@ main {
   background: #c4c4c4;
   color: #333; }
 
+.button {
+  display: inline-block;
+  padding: 0.1rem 0.5rem 0.1rem 0.5rem;
+  border: 0;
+  border-radius: 3px;
+  margin-bottom: 0.3rem;
+  background: #b7b7b7;
+  color: #333;
+  margin-top: 1rem;
+  font-size: 1.3rem; }
+  .button:hover {
+    background: #eece1a;
+    color: #000000; }
+
 #main-footer {
   text-align: center;
   padding: 1rem;
@@ -232,7 +291,7 @@ main {
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
-    grid-template-columns: repeat(4, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -250,19 +309,23 @@ main {
     div.menu-branding.show {
       transform: translate3d(0, 0, 0); }
   .menu-nav {
-    height: 70vh;
+    height: 68vh;
     transform: translate3d(-100%, 0, 0);
     font-size: 24px; }
   .menu-branding {
-    height: 30vh;
+    height: 32vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url("/dist/img/portrait_small.jpg");
+      background: url("/dist/img/Portraitsmall.jpg");
       width: 150px;
-      height: 150px; }
+      height: 152px; }
   .about-info {
-    grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
+    grid-template-areas: "bioimage" "bio" "job3" "hackerrank";
     grid-template-columns: 1fr; }
+  .hackerrank-image {
+    float: right;
+    padding-left: 6.5rem;
+    padding-top: 0; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
 

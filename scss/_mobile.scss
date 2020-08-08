@@ -8,7 +8,7 @@
 // Desktop & Laptops
 @include mediaLg {
   .projects {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -36,19 +36,19 @@
   }
 
   .menu-nav {
-    height: 70vh;
+    height: 68vh;
     transform: translate3d(-100%, 0, 0);
     font-size: 24px;
   }
 
   .menu-branding {
-    height: 30vh;
+    height: 32vh;
     transform: translate3d(100%, 0, 0);
 
     .portrait {
-      background: url("/dist/img/portrait_small.jpg");
+      background: url("/dist/img/Portraitsmall.jpg");
       width: 150px;
-      height: 150px;
+      height: 152px;
     }
   }
 
@@ -56,11 +56,15 @@
     grid-template-areas:
       "bioimage"
       "bio"
-      "job1"
-      "job2"
-      "job3";
+      "job3"
+      "hackerrank";
 
     grid-template-columns: 1fr;
+  }
+  .hackerrank-image {
+    float: right;
+    padding-left: 6.5rem;
+    padding-top: 0;
   }
 
   .projects {
