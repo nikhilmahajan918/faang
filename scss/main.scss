@@ -55,7 +55,7 @@ header {
 }
 
 main {
-  padding: 3rem;
+  padding: 0 3.2rem 0 3.2rem;
   //height: 100%;  //comment out so to make about.html main-footer sticky
   min-height: calc(
     100vh - 60px
@@ -92,6 +92,10 @@ main {
     overflow: hidden;
     margin-top: 0; //vh=
     padding: 0.33rem 2.8rem;
+  }
+
+  &#contact {
+    padding: 3rem;
   }
 }
 
