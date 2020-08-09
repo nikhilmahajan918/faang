@@ -341,16 +341,15 @@ main {
       margin-top: 1vh;
       font-size: 4.2rem; }
   #about {
-    font-size: 14px;
-    margin: 0 1.5vh 0 0.5vh; }
+    font-size: 14px; }
     #about h1 {
       margin-top: 3vh;
       font-size: 4.2rem; }
     #about .hackerrank-image {
-      margin-left: 6.3vh;
+      margin-left: 4vh;
       margin-top: 0;
       margin-bottom: 1vh;
-      width: 68%;
+      width: 57%;
       height: 90px; }
     #about .bio-image {
       grid-area: bioimage;
