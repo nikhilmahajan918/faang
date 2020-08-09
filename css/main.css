@@ -346,7 +346,7 @@ main {
       margin-top: 3vh;
       font-size: 4.2rem; }
     #about .hackerrank-image {
-      margin-left: 4vh;
+      margin-left: 3.7vh;
       margin-top: 0;
       margin-bottom: 1vh;
       width: 57%;
@@ -358,6 +358,8 @@ main {
       border: #eece1a 2px solid;
       width: 190px;
       height: 192px; }
+    #about .job-3 {
+      margin-left: 0; }
   #contact {
     font-size: 14px; }
     #contact h1 {
