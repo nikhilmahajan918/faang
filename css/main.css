@@ -344,12 +344,14 @@ main {
     font-size: 14px;
     margin: 0 1.5vh 0 0.5vh; }
     #about h1 {
-      margin-top: 2vh;
+      margin-top: 3vh;
       font-size: 4.2rem; }
     #about .hackerrank-image {
-      margin-left: 8vh;
+      margin-left: 6.3vh;
       margin-top: 0;
-      margin-bottom: 1vh; }
+      margin-bottom: 1vh;
+      width: 68%;
+      height: 90px; }
     #about .bio-image {
       grid-area: bioimage;
       margin: auto;
