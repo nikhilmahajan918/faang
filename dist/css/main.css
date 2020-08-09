@@ -237,7 +237,7 @@ main {
   align-items: center;
   margin-top: 1rem; }
   .boxes div {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     border: 1.5px #fff solid;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
@@ -331,19 +331,36 @@ main {
     grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
-  main {
-    align-items: center;
-    text-align: center; }
   #home h1 {
     margin-top: 10vh; }
   .projects {
     grid-template-columns: 1fr; }
   #work {
-    padding: 0 3vh 0 2vh;
-    margin: 0 3vh 0 2vh; }
+    margin: 0 2vh 0 1vh; }
+    #work h1 {
+      margin-top: 1vh;
+      font-size: 4.2rem; }
   #about {
-    padding: 0 3vh 0 2vh;
-    margin: 0 3vh 0 2vh; }
-  main#contact {
-    padding: 0 6vh 0 5vh;
-    margin: 0 6vh 0 5vh; } }
+    font-size: 14px;
+    margin: 0 1.5vh 0 0.5vh; }
+    #about h1 {
+      margin-top: 2vh;
+      font-size: 4.2rem; }
+    #about .hackerrank-image {
+      margin-left: 8vh;
+      margin-top: 0;
+      margin-bottom: 1vh; }
+    #about .bio-image {
+      grid-area: bioimage;
+      margin: auto;
+      border-radius: 50%;
+      border: #eece1a 2px solid;
+      width: 190px;
+      height: 192px; }
+  #contact {
+    font-size: 14px; }
+    #contact h1 {
+      font-size: 4.5rem; }
+    #contact div {
+      font-size: 17px;
+      padding: 0.8rem 1.5rem; } }

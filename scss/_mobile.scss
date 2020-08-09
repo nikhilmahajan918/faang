@@ -73,11 +73,7 @@
 
 // Smartphones
 @include mediaSm {
-  main {
-    align-items: center;
-    text-align: center;
-  }
-  #home {
+  #home h1 {
     margin-top: 10vh;
   }
   .projects {
@@ -85,21 +81,43 @@
   }
 
   #work {
-    padding: 0 3vh 0 2vh;
-    margin: 0 3vh 0 2vh;
+    h1 {
+      margin-top: 1vh;
+      font-size: 4.2rem;
+    }
+    margin: 0 2vh 0 1vh;
   }
 
   #about {
     h1 {
       margin-top: 2vh;
+      font-size: 4.2rem;
     }
-    padding: 0 1.5vh 0 0.5vh;
+    font-size: 14px;
     margin: 0 1.5vh 0 0.5vh;
+    .hackerrank-image {
+      margin-left: 8vh;
+      margin-top: 0;
+      margin-bottom: 1vh;
+    }
+    .bio-image {
+      grid-area: bioimage;
+      margin: auto;
+      border-radius: 50%;
+      border: $secondary-color 2px solid;
+      width: 190px;
+      height: 192px;
+    }
   }
 
   #contact {
-    padding: 0 vh 0 0vh;
-    margin: 0 0vh 0 0vh;
-    font-size: 16px;
+    h1 {
+      font-size: 4.5rem;
+    }
+    font-size: 14px;
+    div {
+      font-size: 17px;
+      padding: 0.8rem 1.5rem;
+    }
   }
 }
