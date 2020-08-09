@@ -62,8 +62,7 @@
     grid-template-columns: 1fr;
   }
   .hackerrank-image {
-    float: right;
-    padding-left: 6.5rem;
+    padding-left: 6rem;
     padding-top: 0;
   }
 
@@ -74,10 +73,30 @@
 
 // Smartphones
 @include mediaSm {
-  main#home h1 {
+  main {
+    align-items: center;
+    text-align: center;
+  }
+  #home {
     margin-top: 10vh;
+    margin-right: 2vh;
   }
   .projects {
     grid-template-columns: 1fr;
+  }
+
+  #work {
+    padding: 0 3vh 0 2vh;
+    margin: 0 3vh 0 2vh;
+  }
+
+  #about {
+    padding: 0 3vh 0 2vh;
+    margin: 0 3vh 0 2vh;
+  }
+
+  main#contact {
+    padding: 0 6vh 0 5vh;
+    margin: 0 6vh 0 5vh;
   }
 }

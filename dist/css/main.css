@@ -325,14 +325,26 @@ main {
     grid-template-areas: "bioimage" "bio" "job3" "hackerrank";
     grid-template-columns: 1fr; }
   .hackerrank-image {
-    float: right;
-    padding-left: 6.5rem;
+    padding-left: 6rem;
     padding-top: 0; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
-  main#home h1 {
-    margin-top: 10vh; }
+  main {
+    align-items: center;
+    text-align: center; }
+  #home {
+    margin-top: 10vh;
+    margin-right: 2vh; }
   .projects {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  #work {
+    padding: 0 3vh 0 2vh;
+    margin: 0 3vh 0 2vh; }
+  #about {
+    padding: 0 3vh 0 2vh;
+    margin: 0 3vh 0 2vh; }
+  main#contact {
+    padding: 0 6vh 0 5vh;
+    margin: 0 6vh 0 5vh; } }
