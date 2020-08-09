@@ -90,12 +90,15 @@
   }
 
   #about {
-    padding: 0 3vh 0 2vh;
-    margin: 0 3vh 0 2vh;
+    h1 {
+      margin-top: 2vh;
+    }
+    padding: 0 1.5vh 0 0.5vh;
+    margin: 0 1.5vh 0 0.5vh;
   }
 
-  main#contact {
-    padding: 0 0vh 0 0vh;
+  #contact {
+    padding: 0 vh 0 0vh;
     margin: 0 0vh 0 0vh;
     font-size: 16px;
   }
