@@ -83,7 +83,7 @@ main {
   &#about {
     overflow: hidden;
     margin-top: 3.2vh; //vh=viewport height
-    padding: 0 4rem;
+    padding: 0 3rem;
     margin: 0 0.1rem 0 0.1rem;
   }
 
@@ -110,7 +110,7 @@ main {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
-    border: $secondary-color 2px solid;
+    border: $secondary-color 0.5px solid;
     width: 227px;
     height: 240px;
   }
@@ -118,11 +118,10 @@ main {
   .hackerrank-image {
     grid-area: hackerrank;
     width: 50%;
-    height: 90px;
+    height: 95x;
     margin-left: 0;
-    margin-right: 30px;
-    margin-top: 20px;
-    float: left;
+    margin-right: 20px;
+    margin-top: 10px;
     border-radius: 20%;
   }
 
@@ -146,7 +145,7 @@ main {
   .job {
     background: lighten($color: $primary-color, $amount: 1.7);
     padding: 0.56rem 0 0 0.6rem; //0.5rem 8
-    margin: 0 0 0 0.8rem;
+    margin: 0.4rem 0 0 0.8rem;
     border-bottom: $secondary-color 5px solid;
     height: 91%;
   }

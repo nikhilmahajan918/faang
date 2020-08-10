@@ -57,7 +57,7 @@
       height: 242px;
       background: url("../img/Portraitkaint.jpg");
       border-radius: 50%;
-      border: solid 2px #eece1a; }
+      border: solid 0.5px #eece1a; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
@@ -164,7 +164,7 @@ main {
   main#about {
     overflow: hidden;
     margin-top: 3.2vh;
-    padding: 0 4rem;
+    padding: 0 3rem;
     margin: 0 0.1rem 0 0.1rem; }
   main#work {
     overflow: hidden;
@@ -182,17 +182,16 @@ main {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
-    border: #eece1a 2px solid;
+    border: #eece1a 0.5px solid;
     width: 227px;
     height: 240px; }
   .about-info .hackerrank-image {
     grid-area: hackerrank;
     width: 50%;
-    height: 90px;
+    height: 95x;
     margin-left: 0;
-    margin-right: 30px;
-    margin-top: 20px;
-    float: left;
+    margin-right: 20px;
+    margin-top: 10px;
     border-radius: 20%; }
   .about-info .bio {
     grid-area: bio;
@@ -206,7 +205,7 @@ main {
   .about-info .job {
     background: #484848;
     padding: 0.56rem 0 0 0.6rem;
-    margin: 0 0 0 0.8rem;
+    margin: 0.4rem 0 0 0.8rem;
     border-bottom: #eece1a 5px solid;
     height: 91%; }
 
@@ -320,7 +319,10 @@ main {
     .menu-branding .portrait {
       background: url("../img/Portraitsmall.jpg");
       width: 135px;
-      height: 142px; }
+      height: 142px;
+      border: 0.3px #eece1a solid; }
+  main#about {
+    padding: 0 16px; }
   .about-info {
     grid-template-areas: "bioimage" "bio" "job3" "hackerrank";
     grid-template-columns: 1fr; }
@@ -336,44 +338,56 @@ main {
     margin-top: 10vh; }
   .projects {
     grid-template-columns: 1fr; }
-  #work {
-    margin: 0 2vh 0 1vh; }
-    #work h1 {
-      margin-top: 1vh;
+  main#work {
+    padding: 0 1rem;
+    margin: auto; }
+    main#work h1 {
+      margin-top: 3vh;
       font-size: 4.2rem; }
-  #about p {
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 0; }
-  #about h1 {
-    margin-top: 3vh;
-    font-size: 4.4rem; }
-  #about .bio-image {
-    grid-area: bioimage;
-    margin: auto;
-    border-radius: 50%;
-    border: #eece1a 2px solid;
-    width: 190px;
-    height: 192px; }
-  #about .job-3 {
-    border-radius: 2%;
-    height: 95%;
-    line-height: 1.55em;
-    margin-left: 0;
-    font-size: 17px;
-    padding-bottom: 0.6rem; }
-    #about .job-3 h3 {
-      padding-bottom: 0.5rem; }
-  #about .hackerrank-image {
-    margin-left: 3.7vh;
-    margin-top: 0;
-    margin-bottom: 1vh;
-    width: 57%;
-    height: 90px; }
-  #contact {
-    font-size: 14px; }
-    #contact h1 {
-      font-size: 4.5rem; }
-    #contact div {
+  main#about {
+    padding: 0 1rem;
+    margin: auto; }
+    main#about p {
+      margin: 0 auto;
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 0; }
+    main#about h1 {
+      margin-top: 3vh;
+      font-size: 4.2rem; }
+    main#about .bio-image {
+      grid-area: bioimage;
+      margin: auto;
+      border-radius: 50%;
+      border: #eece1a 0.3px solid;
+      width: 190px;
+      height: 200px; }
+    main#about .job {
+      margin: 0;
+      padding: 1rem; }
+    main#about .job-3 {
+      border-radius: 2%;
+      height: 95%;
+      line-height: 1.55em;
+      margin-left: 0;
       font-size: 17px;
-      padding: 0.8rem 1.5rem; } }
+      padding-bottom: 0.6rem; }
+      main#about .job-3 h3 {
+        padding-bottom: 0.5rem; }
+      main#about .job-3 p {
+        text-align: justify; }
+    main#about .hackerrank-image {
+      margin-left: 3.7vh;
+      margin-top: 0;
+      margin-bottom: 1vh;
+      width: 57%;
+      height: 90px; }
+  main#contact {
+    margin: auto;
+    padding: 0 1.6rem; }
+    main#contact h1 {
+      font-size: 4.2rem;
+      padding-top: 3vh; }
+    main#contact div {
+      font-size: 1.1rem;
+      padding: 0.8rem 1.6rem; } }

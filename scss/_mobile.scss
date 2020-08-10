@@ -49,7 +49,12 @@
       background: url("../img/Portraitsmall.jpg");
       width: 135px;
       height: 142px;
+      border: 0.3px $secondary-color solid;
     }
+  }
+
+  main#about {
+    padding: 0 16px;
   }
 
   .about-info {
@@ -82,16 +87,20 @@
     grid-template-columns: 1fr;
   }
 
-  #work {
+  main#work {
     h1 {
-      margin-top: 1vh;
+      margin-top: 3vh;
       font-size: 4.2rem;
     }
-    margin: 0 2vh 0 1vh;
+    padding: 0 1rem;
+    margin: auto;
   }
 
-  #about {
+  main#about {
+    padding: 0 1rem;
+    margin: auto;
     p {
+      margin: 0 auto;
       text-align: center;
       margin-top: 0;
       margin-bottom: 0;
@@ -99,21 +108,28 @@
 
     h1 {
       margin-top: 3vh;
-      font-size: 4.4rem;
+      font-size: 4.2rem;
     }
 
     .bio-image {
       grid-area: bioimage;
       margin: auto;
       border-radius: 50%;
-      border: $secondary-color 2px solid;
+      border: $secondary-color 0.3px solid;
       width: 190px;
-      height: 192px;
+      height: 200px;
+    }
+    .job {
+      margin: 0;
+      padding: 1rem;
     }
     .job-3 {
       border-radius: 2%;
       h3 {
         padding-bottom: 0.5rem;
+      }
+      p {
+        text-align: justify;
       }
       height: 95%;
       line-height: 1.55em;
@@ -130,14 +146,16 @@
     }
   }
 
-  #contact {
+  main#contact {
     h1 {
-      font-size: 4.5rem;
+      font-size: 4.2rem;
+      padding-top: 3vh;
     }
-    font-size: 14px;
+    margin: auto;
+    padding: 0 1.6rem;
     div {
-      font-size: 17px;
-      padding: 0.8rem 1.5rem;
+      font-size: 1.1rem;
+      padding: 0.8rem 1.6rem;
     }
   }
 }
