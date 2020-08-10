@@ -60,10 +60,12 @@
       "hackerrank";
 
     grid-template-columns: 1fr;
-  }
-  .hackerrank-image {
-    padding-left: 6rem;
-    padding-top: 0;
+
+    .hackerrank-image {
+      grid-area: hackerrank;
+      padding-left: 6rem;
+      padding-top: 0;
+    }
   }
 
   .projects {
@@ -89,19 +91,17 @@
   }
 
   #about {
+    p {
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
     h1 {
       margin-top: 3vh;
       font-size: 4.4rem;
     }
-    margin: 0;
-    padding: 0;
-    .hackerrank-image {
-      margin-left: 3.7vh;
-      margin-top: 0;
-      margin-bottom: 1vh;
-      width: 57%;
-      height: 90px;
-    }
+
     .bio-image {
       grid-area: bioimage;
       margin: auto;
@@ -110,38 +110,25 @@
       width: 190px;
       height: 192px;
     }
-
     .job-3 {
+      border-radius: 2%;
+      h3 {
+        padding-bottom: 0.5rem;
+      }
+      height: 95%;
+      line-height: 1.55em;
       margin-left: 0;
+      font-size: 17px;
+      padding-bottom: 0.6rem;
+    }
+    .hackerrank-image {
+      margin-left: 3.7vh;
+      margin-top: 0;
+      margin-bottom: 1vh;
+      width: 57%;
+      height: 90px;
     }
   }
-
-  /*#about {
-    h1 {
-      margin-top: 3vh;
-      font-size: 4.2rem;
-    }
-    font-size: 14px;
-    .hackerrank-image {
-      margin-left: 3.7vh;
-      margin-top: 0;
-      margin-bottom: 1vh;
-      width: 57%;
-      height: 90px;
-    }
-    .bio-image {
-      grid-area: bioimage;
-      margin: auto;
-      border-radius: 50%;
-      border: $secondary-color 2px solid;
-      width: 190px;
-      height: 192px;
-    }
-
-    .job-3 {
-      margin-left: 0;
-    }
-  }*/
 
   #contact {
     h1 {
