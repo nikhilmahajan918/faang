@@ -319,8 +319,8 @@ main {
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
       background: url("../img/Portraitsmall.jpg");
-      width: 150px;
-      height: 152px; }
+      width: 135px;
+      height: 142px; }
   .about-info {
     grid-template-areas: "bioimage" "bio" "job3" "hackerrank";
     grid-template-columns: 1fr; }
@@ -343,6 +343,24 @@ main {
   #about {
     margin: 0;
     padding: 0; }
+    #about h1 {
+      margin-top: 3vh;
+      font-size: 4.4rem; }
+    #about .hackerrank-image {
+      margin-left: 3.7vh;
+      margin-top: 0;
+      margin-bottom: 1vh;
+      width: 57%;
+      height: 90px; }
+    #about .bio-image {
+      grid-area: bioimage;
+      margin: auto;
+      border-radius: 50%;
+      border: #eece1a 2px solid;
+      width: 190px;
+      height: 192px; }
+    #about .job-3 {
+      margin-left: 0; }
   /*#about {
     h1 {
       margin-top: 3vh;
