@@ -97,13 +97,14 @@
   }
 
   main#about {
-    padding: 0 1rem;
+    padding: 0 1.1rem;
     margin: auto;
-    p {
+    .bio p {
       margin: 0 auto;
       text-align: center;
       margin-top: 0;
       margin-bottom: 0;
+      line-height: 1.85em;
     }
 
     h1 {
@@ -141,7 +142,7 @@
       margin-left: 3.7vh;
       margin-top: 0;
       margin-bottom: 1vh;
-      width: 57%;
+      width: 50%;
       height: 90px;
     }
   }
@@ -149,7 +150,7 @@
   main#contact {
     h1 {
       font-size: 4.2rem;
-      padding-top: 3vh;
+      padding-top: 4.3vh;
     }
     margin: auto;
     padding: 0 1.6rem;
