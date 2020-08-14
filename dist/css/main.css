@@ -234,7 +234,7 @@ main {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 1rem; }
+  margin-top: 3rem; }
   .boxes div {
     font-size: 1.32rem;
     border: 0.2px #fff solid;
@@ -401,11 +401,13 @@ main {
     main#contact h1 {
       font-size: 3.76rem;
       padding-top: 4.8vh; }
-    main#contact .boxes div {
-      font-size: 1.1rem;
-      padding: 0.8rem 1.6rem; }
-      main#contact .boxes div:hover {
-        background: #373737;
-        color: #000000; }
-        main#contact .boxes div:hover span {
-          color: #eece1a; } }
+    main#contact .boxes {
+      margin-top: 4rem; }
+      main#contact .boxes div {
+        font-size: 1.1rem;
+        padding: 0.8rem 1.6rem; }
+        main#contact .boxes div:hover {
+          background: #373737;
+          color: #000000; }
+          main#contact .boxes div:hover span {
+            color: #eece1a; } }
