@@ -35,7 +35,7 @@
     justify-content: center;
     float: left;
     width: 50%;
-    height: 100%;
+    height: 100vh;
     overflow: hidden; }
   .menu-nav {
     margin: 0;
@@ -71,7 +71,7 @@
     font-size: 30px;
     text-transform: uppercase;
     padding: 1rem 0;
-    font-weight: 400;
+    font-weight: 300;
     color: #fff;
     text-decoration: none;
     transition: all 0.5s ease-out; }
@@ -310,11 +310,11 @@ main {
     div.menu-branding.show {
       transform: translate3d(0, 0, 0); }
   .menu-nav {
-    height: 67%;
+    height: 75vh;
     transform: translate3d(-100%, 0, 0);
     font-size: 24px; }
   .menu-branding {
-    height: 33%;
+    height: 325vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
       background: url("../img/Portraitsmall.jpg");
@@ -327,9 +327,6 @@ main {
     grid-template-areas: "bioimage" "bio" "job3" "hackerrank";
     grid-template-columns: 1fr; }
     .about-info .hackerrank-image {
-      grid-area: hackerrank;
-      padding-left: 6rem;
-      padding-top: 0;
       display: none; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
@@ -392,12 +389,6 @@ main {
         padding-bottom: 0.5rem; }
       main#about .job-3 p {
         text-align: justify; }
-    main#about .hackerrank-image {
-      margin-left: 6.9vh;
-      margin-top: 0;
-      margin-bottom: 1vh;
-      width: 50%;
-      height: 90px; }
   main#contact {
     margin: auto;
     padding: 0 1.6rem; }
