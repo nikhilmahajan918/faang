@@ -36,13 +36,13 @@
   }
 
   .menu-nav {
-    height: 67%;
+    height: 75vh;
     transform: translate3d(-100%, 0, 0);
     font-size: 24px;
   }
 
   .menu-branding {
-    height: 33%;
+    height: 325vh;
     transform: translate3d(100%, 0, 0);
 
     .portrait {
@@ -67,9 +67,6 @@
     grid-template-columns: 1fr;
 
     .hackerrank-image {
-      grid-area: hackerrank;
-      padding-left: 6rem;
-      padding-top: 0;
       display: none;
     }
   }
@@ -169,13 +166,6 @@
       margin-left: 0;
       font-size: 17px;
       padding-bottom: 0.6rem;
-    }
-    .hackerrank-image {
-      margin-left: 6.9vh;
-      margin-top: 0;
-      margin-bottom: 1vh;
-      width: 50%;
-      height: 90px;
     }
   }
 
