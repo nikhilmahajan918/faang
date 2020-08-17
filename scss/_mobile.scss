@@ -36,13 +36,13 @@
   }
 
   .menu-nav {
-    height: 67vh;
+    height: 67%;
     transform: translate3d(-100%, 0, 0);
     font-size: 24px;
   }
 
   .menu-branding {
-    height: 33vh;
+    height: 33%;
     transform: translate3d(100%, 0, 0);
 
     .portrait {
@@ -81,14 +81,6 @@
 
 // Smartphones
 @include mediaSm {
-  .menu-nav {
-    height: 67vh;
-  }
-
-  .menu-branding {
-    height: 33vh;
-  }
-
   .hackerrank-image {
     display: none;
   }
@@ -221,13 +213,6 @@
     }
     .hackerrank-image {
       display: none;
-    }
-    .menu-nav {
-      height: 67vh;
-    }
-
-    .menu-branding {
-      height: 33vh;
     }
   }
 }
