@@ -335,6 +335,10 @@ main {
     grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
+  .menu-nav {
+    height: 67vh; }
+  .menu-branding {
+    height: 33vh; }
   .hackerrank-image {
     display: none; }
   #home h1 {
@@ -422,4 +426,8 @@ main {
   .projects {
     grid-template-columns: 1fr; }
   .hackerrank-image {
-    display: none; } }
+    display: none; }
+  .menu-nav {
+    height: 67vh; }
+  .menu-branding {
+    height: 33vh; } }

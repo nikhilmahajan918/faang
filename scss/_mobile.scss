@@ -81,6 +81,14 @@
 
 // Smartphones
 @include mediaSm {
+  .menu-nav {
+    height: 67vh;
+  }
+
+  .menu-branding {
+    height: 33vh;
+  }
+
   .hackerrank-image {
     display: none;
   }
@@ -213,6 +221,13 @@
     }
     .hackerrank-image {
       display: none;
+    }
+    .menu-nav {
+      height: 67vh;
+    }
+
+    .menu-branding {
+      height: 33vh;
     }
   }
 }
