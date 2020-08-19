@@ -251,10 +251,11 @@ main {
 // footer area
 #main-footer {
   text-align: center;
-  padding: 1rem;
-  background: darken($color: $primary-color, $amount: 10);
+  padding: 0.7rem;
+  background: darken($color: $primary-color, $amount: 8);
   color: set-text-color($primary-color);
-  height: 60px;
+  height: 50px;
+  font-size: 13px;
 }
 
 @import "mobile";
