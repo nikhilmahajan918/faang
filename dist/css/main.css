@@ -149,7 +149,7 @@ header {
 
 main {
   padding: 1rem;
-  min-height: calc( 100vh - 60px); }
+  min-height: calc( 100vh - 50px); }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
@@ -170,124 +170,116 @@ main {
     overflow: hidden;
     margin-top: 0;
     padding: 0.33rem 1.8rem; }
-  main#contact {
-    padding: 2rem; }
-
-.about-info {
-  display: grid;
-  grid-gap: 30px;
-  grid-template-areas: "bioimage bio bio" "job3 job3 hackerrank";
-  grid-template-columns: repeat(1, 1fr); }
-  .about-info .bio-image {
-    grid-area: bioimage;
-    margin: auto;
-    border-radius: 50%;
-    border: #eece1a 0.5px solid;
-    width: 227px;
-    height: 240px; }
-  .about-info .hackerrank-image {
-    grid-area: hackerrank;
-    width: 50%;
-    height: 95x;
-    margin-left: 0;
-    margin-right: 20px;
-    margin-top: 10px;
-    border-radius: 20%; }
-  .about-info .bio {
-    grid-area: bio;
-    font-size: 1.5rem; }
-    .about-info .bio p {
-      margin-top: 8px; }
-  .about-info .job-1 {
-    grid-area: job1; }
-  .about-info .job-2 {
-    grid-area: job2; }
-  .about-info .job-3 {
-    grid-area: job3; }
-  .about-info .job {
-    background: #484848;
-    padding: 0.56rem 0 0 0.6rem;
-    margin: 0.4rem 0 0 0.8rem;
-    border-bottom: #eece1a 5px solid;
-    height: 91%; }
-
-.projects {
-  display: grid;
-  grid-gap: 0.7rem;
-  grid-template-columns: repeat(3, 1fr); }
-  .projects img {
-    width: 100%;
-    border: #fff solid;
-    margin-top: 2%; }
-    .projects img:hover {
-      opacity: 0.9;
-      border-color: #eece1a;
+    main#work#contact {
+      padding: 2rem; }
+  main .about-info {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas: "bioimage bio bio" "job3 job3 hackerrank";
+    grid-template-columns: repeat(1, 1fr); }
+    main .about-info .bio-image {
+      grid-area: bioimage;
+      margin: auto;
+      border-radius: 50%;
+      border: #eece1a 0.5px solid;
+      width: 227px;
+      height: 240px; }
+    main .about-info .hackerrank-image {
+      grid-area: hackerrank;
+      width: 50%;
+      height: 95x;
+      margin-left: 0;
+      margin-right: 20px;
+      margin-top: 10px;
+      border-radius: 20%; }
+    main .about-info .bio {
+      grid-area: bio;
+      font-size: 1.5rem; }
+      main .about-info .bio p {
+        margin-top: 8px; }
+    main .about-info .job-1 {
+      grid-area: job1; }
+    main .about-info .job-2 {
+      grid-area: job2; }
+    main .about-info .job-3 {
+      grid-area: job3; }
+    main .about-info .job {
+      background: #484848;
+      padding: 0.56rem 0 0 0.6rem;
+      margin: 0.4rem 0 0 0.8rem;
+      border-bottom: #eece1a 5px solid;
+      height: 91%; }
+  main .projects {
+    display: grid;
+    grid-gap: 0.7rem;
+    grid-template-columns: repeat(3, 1fr); }
+    main .projects img {
+      width: 100%;
+      border: #fff solid;
+      margin-top: 2%; }
+      main .projects img:hover {
+        opacity: 0.9;
+        border-color: #eece1a;
+        transition: all 0.5s ease-out; }
+    main .projects .item {
+      background: #515151;
+      padding: 0.2rem; }
+      main .projects .item h3 {
+        text-align: center; }
+      main .projects .item p {
+        margin: 6px 0; }
+  main .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 3rem; }
+    main .boxes div {
+      font-size: 1.32rem;
+      border: 0.2px #fff solid;
+      padding: 1.5rem 2.5rem;
+      margin-bottom: 3rem;
       transition: all 0.5s ease-out; }
-  .projects .item {
-    background: #515151;
-    padding: 0.2rem; }
-    .projects .item h3 {
-      text-align: center; }
-    .projects .item p {
-      margin: 6px 0; }
-
-.boxes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 3rem; }
-  .boxes div {
-    font-size: 1.32rem;
-    border: 0.2px #fff solid;
-    padding: 1.5rem 2.5rem;
-    margin-bottom: 3rem;
-    transition: all 0.5s ease-out; }
-    .boxes div:hover {
-      padding: 0.5rem 1.5rem;
+      main .boxes div:hover {
+        padding: 0.5rem 1.5rem;
+        background: #eece1a;
+        color: #000000; }
+        main .boxes div:hover span {
+          color: #000000; }
+  main .btn, main .btn-dark, main .btn-light {
+    display: block;
+    padding: 0.5rem 1rem;
+    border: 0;
+    margin-bottom: 0.3rem; }
+    main .btn:hover, main .btn-dark:hover, main .btn-light:hover {
       background: #eece1a;
       color: #000000; }
-      .boxes div:hover span {
-        color: #000000; }
-
-.btn, .btn-dark, .btn-light {
-  display: block;
-  padding: 0.5rem 1rem;
-  border: 0;
-  margin-bottom: 0.3rem; }
-  .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #eece1a;
-    color: #000000; }
-
-.btn-dark {
-  background: black;
-  color: #fff; }
-
-.btn-light {
-  background: #c4c4c4;
-  color: #333; }
-
-.button {
-  display: inline-block;
-  padding: 0.1rem 0.5rem 0.1rem 0.5rem;
-  border: 0;
-  border-radius: 3px;
-  margin-bottom: 0.3rem;
-  background: #bcbcbc;
-  color: #333;
-  margin-top: 1rem;
-  font-size: 1.3rem; }
-  .button:hover {
-    background: #eece1a;
-    color: #000000; }
+  main .btn-dark {
+    background: black;
+    color: #fff; }
+  main .btn-light {
+    background: #c4c4c4;
+    color: #333; }
+  main .button {
+    display: inline-block;
+    padding: 0.1rem 0.5rem 0.1rem 0.5rem;
+    border: 0;
+    border-radius: 3px;
+    margin-bottom: 0.3rem;
+    background: #bcbcbc;
+    color: #333;
+    margin-top: 1rem;
+    font-size: 1.3rem; }
+    main .button:hover {
+      background: #eece1a;
+      color: #000000; }
 
 #main-footer {
   text-align: center;
   padding: 1rem;
   background: #303030;
   color: #fff;
-  height: 50px;
-  font-size: 13px; }
+  height: 50px; }
 
 @media screen and (min-width: 1171px) {
   .projects {
@@ -405,8 +397,8 @@ main {
     main#contact .boxes {
       margin-top: 4rem; }
       main#contact .boxes div {
-        font-size: 1.1rem;
-        padding: 0.8rem 1.6rem; }
+        font-size: 1.22rem;
+        padding: 0.8rem 1.2rem; }
         main#contact .boxes div:hover {
           background: #373737;
           color: #000000; }

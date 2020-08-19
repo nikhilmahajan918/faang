@@ -58,7 +58,7 @@ main {
   padding: 1rem;
   //height: 100%;  //comment out so to make about.html main-footer sticky
   min-height: calc(
-    100vh - 60px
+    100vh - 50px
   ); //to make sticky footer = actual ht - stickyfooter ht
 
   .icons {
@@ -91,166 +91,165 @@ main {
     overflow: hidden;
     margin-top: 0; //vh=
     padding: 0.33rem 1.8rem;
-  }
 
-  &#contact {
-    padding: 2rem;
-  }
-}
-
-.about-info {
-  display: grid;
-  grid-gap: 30px;
-  grid-template-areas:
-    "bioimage bio bio"
-    "job3 job3 hackerrank";
-  grid-template-columns: repeat(1, 1fr);
-
-  .bio-image {
-    grid-area: bioimage;
-    margin: auto;
-    border-radius: 50%;
-    border: $secondary-color 0.5px solid;
-    width: 227px;
-    height: 240px;
-  }
-
-  .hackerrank-image {
-    grid-area: hackerrank;
-    width: 50%;
-    height: 95x;
-    margin-left: 0;
-    margin-right: 20px;
-    margin-top: 10px;
-    border-radius: 20%;
-  }
-
-  .bio {
-    grid-area: bio;
-    font-size: 1.5rem;
-    p {
-      margin-top: 8px;
+    &#contact {
+      padding: 2rem;
     }
   }
 
-  .job-1 {
-    grid-area: job1;
-  }
+  .about-info {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas:
+      "bioimage bio bio"
+      "job3 job3 hackerrank";
+    grid-template-columns: repeat(1, 1fr);
 
-  .job-2 {
-    grid-area: job2;
-  }
+    .bio-image {
+      grid-area: bioimage;
+      margin: auto;
+      border-radius: 50%;
+      border: $secondary-color 0.5px solid;
+      width: 227px;
+      height: 240px;
+    }
 
-  .job-3 {
-    grid-area: job3;
-  }
+    .hackerrank-image {
+      grid-area: hackerrank;
+      width: 50%;
+      height: 95x;
+      margin-left: 0;
+      margin-right: 20px;
+      margin-top: 10px;
+      border-radius: 20%;
+    }
 
-  .job {
-    background: lighten($color: $primary-color, $amount: 1.7);
-    padding: 0.56rem 0 0 0.6rem; //0.5rem 8
-    margin: 0.4rem 0 0 0.8rem;
-    border-bottom: $secondary-color 5px solid;
-    height: 91%;
-  }
-}
+    .bio {
+      grid-area: bio;
+      font-size: 1.5rem;
+      p {
+        margin-top: 8px;
+      }
+    }
 
-// work projects
-.projects {
-  display: grid;
-  grid-gap: 0.7rem;
-  grid-template-columns: repeat(3, 1fr);
+    .job-1 {
+      grid-area: job1;
+    }
 
-  img {
-    width: 100%;
-    border: #fff solid;
-    margin-top: 2%;
+    .job-2 {
+      grid-area: job2;
+    }
 
-    &:hover {
-      opacity: 0.9;
-      border-color: $secondary-color;
-      @include easeOut;
+    .job-3 {
+      grid-area: job3;
+    }
+
+    .job {
+      background: lighten($color: $primary-color, $amount: 1.7);
+      padding: 0.56rem 0 0 0.6rem; //0.5rem 8
+      margin: 0.4rem 0 0 0.8rem;
+      border-bottom: $secondary-color 5px solid;
+      height: 91%;
     }
   }
 
-  .item {
-    background: lighten($color: $primary-color, $amount: 5);
-    padding: 0.2rem;
-    h3 {
-      text-align: center;
+  // work projects
+  .projects {
+    display: grid;
+    grid-gap: 0.7rem;
+    grid-template-columns: repeat(3, 1fr);
+
+    img {
+      width: 100%;
+      border: #fff solid;
+      margin-top: 2%;
+
+      &:hover {
+        opacity: 0.9;
+        border-color: $secondary-color;
+        @include easeOut;
+      }
     }
 
-    p {
-      margin: 6px 0;
-    }
-  }
-}
+    .item {
+      background: lighten($color: $primary-color, $amount: 5);
+      padding: 0.2rem;
+      h3 {
+        text-align: center;
+      }
 
-// contact page
-.boxes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 3rem;
-
-  div {
-    font-size: 1.32rem;
-    border: 0.2px #fff solid;
-    padding: 1.5rem 2.5rem;
-    margin-bottom: 3rem;
-    @include easeOut;
-
-    &:hover {
-      padding: 0.5rem 1.5rem;
-      background: $secondary-color;
-      color: set-text-color($secondary-color);
-      span {
-        color: set-text-color($secondary-color);
+      p {
+        margin: 6px 0;
       }
     }
   }
-}
 
-//button styles
-.btn {
-  display: block;
-  padding: 0.5rem 1rem;
-  border: 0;
-  margin-bottom: 0.3rem;
+  // contact page
+  .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 3rem;
 
-  &:hover {
-    background: $secondary-color;
-    color: set-text-color($secondary-color);
+    div {
+      font-size: 1.32rem;
+      border: 0.2px #fff solid;
+      padding: 1.5rem 2.5rem;
+      margin-bottom: 3rem;
+      @include easeOut;
+
+      &:hover {
+        padding: 0.5rem 1.5rem;
+        background: $secondary-color;
+        color: set-text-color($secondary-color);
+        span {
+          color: set-text-color($secondary-color);
+        }
+      }
+    }
+  }
+
+  //button styles
+  .btn {
+    display: block;
+    padding: 0.5rem 1rem;
+    border: 0;
+    margin-bottom: 0.3rem;
+
+    &:hover {
+      background: $secondary-color;
+      color: set-text-color($secondary-color);
+    }
+  }
+  .btn-dark {
+    @extend .btn;
+    background: darken($color: $primary-color, $amount: 50);
+    color: #fff;
+  }
+
+  .btn-light {
+    @extend .btn;
+    background: lighten($color: $primary-color, $amount: 50);
+    color: #333;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 0.1rem 0.5rem 0.1rem 0.5rem;
+    border: 0;
+    border-radius: 3px;
+    margin-bottom: 0.3rem;
+    background: lighten($color: $primary-color, $amount: 47);
+    color: #333;
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    &:hover {
+      background: $secondary-color;
+      color: set-text-color($secondary-color);
+    }
   }
 }
-.btn-dark {
-  @extend .btn;
-  background: darken($color: $primary-color, $amount: 50);
-  color: #fff;
-}
-
-.btn-light {
-  @extend .btn;
-  background: lighten($color: $primary-color, $amount: 50);
-  color: #333;
-}
-
-.button {
-  display: inline-block;
-  padding: 0.1rem 0.5rem 0.1rem 0.5rem;
-  border: 0;
-  border-radius: 3px;
-  margin-bottom: 0.3rem;
-  background: lighten($color: $primary-color, $amount: 47);
-  color: #333;
-  margin-top: 1rem;
-  font-size: 1.3rem;
-  &:hover {
-    background: $secondary-color;
-    color: set-text-color($secondary-color);
-  }
-}
-
 // footer area
 #main-footer {
   text-align: center;
@@ -258,7 +257,6 @@ main {
   background: darken($color: $primary-color, $amount: 8);
   color: set-text-color($primary-color);
   height: 50px;
-  font-size: 13px;
 }
 
 @import "mobile";
