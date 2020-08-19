@@ -337,7 +337,7 @@ main {
   .hackerrank-image {
     display: none; }
   #home h1 {
-    margin-top: 10vh; }
+    margin-top: 20vh; }
   .projects {
     grid-template-columns: 1fr; }
   main#work {
