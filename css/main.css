@@ -196,6 +196,8 @@ main {
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
+    .about-info .bio p {
+      margin-top: 8px; }
   .about-info .job-1 {
     grid-area: job1; }
   .about-info .job-2 {
@@ -358,11 +360,15 @@ main {
     margin: auto; }
     main#about .bio p {
       margin: 0 auto;
-      text-align: center;
+      text-align: unset;
       margin-top: 0;
       margin-bottom: 0;
-      line-height: 1.85em;
-      font-size: 1.281rem; }
+      line-height: 1.7em;
+      font-size: 1.28rem;
+      background: #464646;
+      padding: 0.56rem 0.3rem 0 0.6rem;
+      margin: 0.4rem 0 0 0.8rem;
+      height: 8%; }
     main#about .button:hover {
       background: #c4c4c4;
       color: #000000; }
