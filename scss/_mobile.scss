@@ -122,11 +122,15 @@
     margin: auto;
     .bio p {
       margin: 0 auto;
-      text-align: center;
+      text-align: unset;
       margin-top: 0;
       margin-bottom: 0;
-      line-height: 1.85em;
-      font-size: 1.281rem;
+      line-height: 1.7em;
+      font-size: 1.28rem;
+      background: lighten($color: $primary-color, $amount: 0.8);
+      padding: 0.56rem 0.3rem 0 0.6rem; //0.5rem 8
+      margin: 0.4rem 0 0 0.8rem;
+      height: 8%;
     }
 
     .button {
