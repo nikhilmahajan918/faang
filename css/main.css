@@ -366,8 +366,8 @@ main {
       line-height: 1.7em;
       font-size: 1.28rem;
       background: #464646;
-      padding: 0.56rem 0.3rem 0 0.6rem;
-      margin: 0.4rem 0 0 0.8rem;
+      padding: 0rem 0.3rem 0 0.6rem;
+      margin: 0rem 0 0 0.8rem;
       height: 8%; }
     main#about .button:hover {
       background: #c4c4c4;
