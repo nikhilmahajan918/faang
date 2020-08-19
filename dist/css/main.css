@@ -158,7 +158,8 @@ main {
         color: #eece1a;
         transition: all 0.5s ease-out; }
   main#home {
-    overflow: hidden; }
+    overflow: hidden;
+    position: fixed; }
     main#home h1 {
       margin-top: 17vh; }
   main#about {
@@ -286,7 +287,8 @@ main {
   padding: 1rem;
   background: #303030;
   color: #fff;
-  height: 50px; }
+  height: 50px;
+  font-size: 13px; }
 
 @media screen and (min-width: 1171px) {
   .projects {
@@ -337,7 +339,8 @@ main {
   .hackerrank-image {
     display: none; }
   #home h1 {
-    margin-top: 20vh; }
+    overflow: hidden;
+    margin-top: 17vh; }
   .projects {
     grid-template-columns: 1fr; }
   main#work {

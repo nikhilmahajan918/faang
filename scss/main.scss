@@ -78,6 +78,7 @@ main {
     h1 {
       margin-top: 17vh; //vh=viewpointheight
     }
+    position: fixed;
   }
 
   &#about {
@@ -256,6 +257,7 @@ main {
   background: darken($color: $primary-color, $amount: 8);
   color: set-text-color($primary-color);
   height: 50px;
+  font-size: 13px;
 }
 
 @import "mobile";
