@@ -196,7 +196,8 @@ main {
     border-radius: 20%; }
   .about-info .bio {
     grid-area: bio;
-    font-size: 1.5rem; }
+    font-size: 1.2rem;
+    line-height: 31px; }
     .about-info .bio p {
       margin-top: 8px; }
   .about-info .job-1 {
